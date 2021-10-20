@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\EvaluationController;
+use App\Http\Controllers\QuestionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,14 +19,20 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('/questions', function () {
-    return view('questions');
-})->name('questions');
+Route::get(
+    '/evaluation/{evaluationId}/question/{id}',
+    [QuestionController::class, 'show']
+)->name('questions')->middleware('auth');
 
-//Route::get(
-//    '/user/profile',
-//    [UserProfileController::class, 'show']
-//)->name('profile');
+Route::get(
+    '/evaluation/{evaluationId}/finish',
+    [EvaluationController::class, 'finish']
+)->name('finish')->middleware('auth');
+
+Route::post(
+    '/evaluation/{evaluationId}/question/{id}',
+    [QuestionController::class, 'saveAnswer']
+)->name('saveAnswer')->middleware('auth');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Answer extends Model
 {
     use HasFactory;
+
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'answers';
+
+    public function question()
+    {
+        return $this->belongsTo(Question::class);
+    }
 }

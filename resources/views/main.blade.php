@@ -16,7 +16,7 @@
                         </div>
                         <div class="d-flex flex-row justify-content-center pt-5">
                             <a class="btn btn-lg btn-primary border-success align-items-center btn-primary mt-3"
-                               href="{{ route('questions') }}"
+                               href="{{ url('/evaluation/1/question/1') }}"
                                type="button">
                                 Iniciar<i class="fa fa-angle-right ml-2"></i>
                             </a>

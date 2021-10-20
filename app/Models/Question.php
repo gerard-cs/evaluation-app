@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Question extends Model
 {
     use HasFactory;
+
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'questions';
+    protected $primaryKey = 'id';
+
+    public function evaluation()
+    {
+        return $this->belongsTo(Evaluation::class);
+    }
 }
