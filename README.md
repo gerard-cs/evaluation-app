@@ -4,9 +4,9 @@ Evaluation App is an evaluation system that consists of 10 multiple-choice quest
 
 The system was developed with Laravel 8 and the information is stored in a MySQL database. 
 
-You can test the app in [here](`https://phplaravel-676291-2222514.cloudwaysapps.com/`). 
+You can test the app [here](https://phplaravel-676291-2222514.cloudwaysapps.com/). 
 
-User is required to use the app. You can register [right here](`https://phplaravel-676291-2222514.cloudwaysapps.com/register`).
+User is required to use the app. You can register [right here](https://phplaravel-676291-2222514.cloudwaysapps.com/register).
 
 
 
