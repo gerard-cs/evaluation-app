@@ -20,6 +20,6 @@ User is required to use the app. You can register [right here](https://phplarave
 
 - Edit `.env` according to your own database credentials.
 
-- Run Migrations with `./vendor/bin/sail artisan migrate`.
+- Run Migrations with `./vendor/bin/sail artisan migrate --seed`.
 
 - Open your browser in `http://localhost/`.
