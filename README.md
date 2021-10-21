@@ -23,3 +23,7 @@ User is required to use the app. You can register [right here](https://phplarave
 - Run Migrations with `./vendor/bin/sail artisan migrate --seed`.
 
 - Open your browser in `http://localhost/`.
+
+### Flow chart
+
+![image](https://user-images.githubusercontent.com/4725659/138207358-baeb8f0f-5fc8-42a7-a572-646a466b73c9.png)
